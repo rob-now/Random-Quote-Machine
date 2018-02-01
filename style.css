@@ -56,6 +56,25 @@ a, div {
 }
 
 .quote {
+    display: block;
     padding: 0 10px;
     text-align: justify;
+    float: left;
+}
+
+.title {
+    display: block;
+}
+
+
+
+#tweet-btn {
+    display: block;
+    text-align: center;
+    margin: 2.5em 0;
+}
+
+.fa-twitter {
+    color: #419bd7;
+
 }
