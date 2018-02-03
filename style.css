@@ -21,6 +21,8 @@ a, div {
 */
 
 #get-new-quote-btn {
+    font-family: "DejaVu Sans", SansSerif;
+    font-weight: bold;
     display: block;
     width: 300px;
     height: 300px;
@@ -40,31 +42,74 @@ a, div {
     background-color: hsl(116, 100%, 34%);
     color: hsl(0, 0%, 100%);
     /*border: 2px solid hsl(11, 100%, 100%);*/
-    transition: background 0.7s;
+    transition: background 0.5s;
 }
 
 .content {
-    font-size: 20px;
-    padding: 10px;
+    font-size: 2em;
+    display:grid;
+    grid-template-areas: "left center right"
+                         "title title title"
+                         "twitter twitter twitter";
+    grid-template-columns: 1fr 6fr 1fr;
+    /*padding: 10px;
     background: hsl(0, 0%, 97%);
-    border-radius: 5px;
+    border-radius: 5px;*/
+
 }
 
+.left {
+    grid-area: left;
+}
+
+.center {
+    grid-area: center;
+    text-align: justify;
+
+}
+
+.right {
+    grid-area: right;
+}
+
+.title {
+    grid-area: title;
+    text-align: right;
+    margin-right: 1em;
+
+}
+
+.twitter {
+    grid-area: twitter;
+}
+
+.left, .fas, .fa-quote-left, .fa-lg, .fa-pull-left {
+    line-height: 1em;
+}
+
+.fas.fa-pull-left, .fas.fa-pull-right {
+    margin: 1em 0.5em;
+}
+/*
 #quote-title {
     text-align: right;
     margin: 1em;
 }
-
+*/
+/*
 .quote {
     display: block;
     padding: 0 10px;
     text-align: justify;
     float: left;
 }
+*/
 
+/*
 .title {
     display: block;
 }
+*/
 
 
 
