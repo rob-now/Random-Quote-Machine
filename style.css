@@ -75,17 +75,20 @@ a, div {
 .title {
     grid-area: title;
     text-align: right;
-    margin-right: 1em;
-
+    margin-right: 0.9em;
 }
 
 .twitter {
     grid-area: twitter;
+    text-align: center;
+    margin: 1.5em 0;
 }
 
-.left, .fas, .fa-quote-left, .fa-lg, .fa-pull-left {
+
+
+/*.left, .fas, .fa-quote-left, .fa-lg, .fa-pull-left {
     line-height: 1em;
-}
+}*/
 
 .fas.fa-pull-left, .fas.fa-pull-right {
     margin: 1em 0.5em;
@@ -111,15 +114,19 @@ a, div {
 }
 */
 
-
-
 #tweet-btn {
-    display: block;
-    text-align: center;
-    margin: 2.5em 0;
-}
-
-.fa-twitter {
+    /*display: block;*/
+    /*text-align: right;*/
+    /*margin: 1.5em 0;*/
     color: #419bd7;
 
 }
+
+#tweet-btn:hover {
+    color: #3573a3;
+}
+
+/*.fa-twitter {
+    color: #419bd7;
+
+}*/
