@@ -1,5 +1,6 @@
 body {
     /*background: #ff9d80;*/
+    margin-bottom: 2em;
 }
 
 .container {
@@ -21,14 +22,14 @@ a, div {
 */
 
 #get-new-quote-btn {
-    font-family: "DejaVu Sans", SansSerif;
+    font-family: sans-serif;
     font-weight: bold;
     display: block;
-    width: 300px;
-    height: 300px;
-    line-height: 300px;
+    width: 250px;
+    height: 250px;
+    line-height: 250px;
     border-radius: 100%;
-    margin: 2em auto;
+    margin: 1.8em auto;
     text-align: center;
     font-size: 26px;
     text-transform: uppercase;
@@ -36,26 +37,45 @@ a, div {
     background-color: hsl(117, 100%, 46%);
     color: hsl(0, 0%, 100%);
     /*border: 2px solid hsl(11, 100%, 100%);*/
+    transition: background 0.5s ease-in-out;
 }
+
+@media screen and (max-width: 1024px) {
+    #get-new-quote-btn {
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        font-size: 20px;
+    }
+}
+
+
 
 #get-new-quote-btn:hover {
     background-color: hsl(116, 100%, 34%);
     color: hsl(0, 0%, 100%);
     /*border: 2px solid hsl(11, 100%, 100%);*/
-    transition: background 0.5s;
+    transition: background 0.5s ease-in-out;
+    transition-delay: 0s;
 }
 
 .content {
     font-size: 2em;
     display:grid;
     grid-template-areas: "left center right"
-                         "title title title"
-                         "twitter twitter twitter";
+    "title title title"
+    "twitter twitter twitter";
     grid-template-columns: 1fr 6fr 1fr;
-    /*padding: 10px;
+    /*padding: 10px;*/
     background: hsl(0, 0%, 97%);
-    border-radius: 5px;*/
+    border-radius: 5px;
 
+}
+
+@media screen and (max-width: 1024px) {
+    .content {
+        font-size: 1.5em;
+    }
 }
 
 .left {
@@ -78,6 +98,12 @@ a, div {
     margin-right: 0.9em;
 }
 
+@media screen and (max-width: 1024px) {
+    .title {
+        margin-right: 1.5em;
+    }
+}
+
 .twitter {
     grid-area: twitter;
     text-align: center;
@@ -91,8 +117,15 @@ a, div {
 }*/
 
 .fas.fa-pull-left, .fas.fa-pull-right {
-    margin: 1em 0.5em;
+    margin: 1em auto;
 }
+
+@media screen and (max-width: 500px) {
+    .left, .right {
+        visibility: hidden;
+    }
+}
+
 /*
 #quote-title {
     text-align: right;
@@ -119,14 +152,20 @@ a, div {
     /*text-align: right;*/
     /*margin: 1.5em 0;*/
     color: #419bd7;
-
 }
 
 #tweet-btn:hover {
-    color: #3573a3;
+    color: #387fb2;
 }
 
 /*.fa-twitter {
     color: #419bd7;
 
 }*/
+
+/*
+button {
+  background: none;
+  border: none;
+}
+*/
