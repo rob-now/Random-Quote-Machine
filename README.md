@@ -1,2 +1,5 @@
 # Random-Quote-Machine
-FCC project
+
+Project from Free Code Camp.
+
+Random quotes based on API from [quotesondesign](https://quotesondesign.com/).

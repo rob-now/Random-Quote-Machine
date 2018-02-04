@@ -1,25 +1,12 @@
 body {
-    /*background: #ff9d80;*/
     margin-bottom: 2em;
 }
 
 .container {
-    /*display: grid;*/
     max-width: 700px;
-    /*border: 2px solid black;*/
-    /*position: relative;*/
     margin: auto;
-    /*grid-gap: 0px;*/
     font-family: 'Merriweather', serif;
-    /*background: #e4fff5;*/
 }
-
-/*
-a, div {
-    border: 1px solid black;
-    margin: 10px 10px;
-}
-*/
 
 #get-new-quote-btn {
     font-family: sans-serif;
@@ -36,46 +23,24 @@ a, div {
     text-decoration: none;
     background-color: hsl(117, 100%, 46%);
     color: hsl(0, 0%, 100%);
-    /*border: 2px solid hsl(11, 100%, 100%);*/
-    transition: background 0.5s ease-in-out;
+    transition: background 0.5s;
 }
-
-@media screen and (max-width: 1024px) {
-    #get-new-quote-btn {
-        width: 200px;
-        height: 200px;
-        line-height: 200px;
-        font-size: 20px;
-    }
-}
-
-
 
 #get-new-quote-btn:hover {
     background-color: hsl(116, 100%, 34%);
     color: hsl(0, 0%, 100%);
-    /*border: 2px solid hsl(11, 100%, 100%);*/
-    transition: background 0.5s ease-in-out;
-    transition-delay: 0s;
+    transition: background 0.5s;
 }
 
 .content {
     font-size: 2em;
-    display:grid;
+    display: grid;
     grid-template-areas: "left center right"
-    "title title title"
-    "twitter twitter twitter";
+                         "title title title"
+                         "twitter twitter twitter";
     grid-template-columns: 1fr 6fr 1fr;
-    /*padding: 10px;*/
-    background: hsl(0, 0%, 97%);
+    background: #F7F7F7;
     border-radius: 5px;
-
-}
-
-@media screen and (max-width: 1024px) {
-    .content {
-        font-size: 1.5em;
-    }
 }
 
 .left {
@@ -85,7 +50,6 @@ a, div {
 .center {
     grid-area: center;
     text-align: justify;
-
 }
 
 .right {
@@ -98,59 +62,17 @@ a, div {
     margin-right: 0.9em;
 }
 
-@media screen and (max-width: 1024px) {
-    .title {
-        margin-right: 1.5em;
-    }
-}
-
 .twitter {
     grid-area: twitter;
     text-align: center;
     margin: 1.5em 0;
 }
 
-
-
-/*.left, .fas, .fa-quote-left, .fa-lg, .fa-pull-left {
-    line-height: 1em;
-}*/
-
 .fas.fa-pull-left, .fas.fa-pull-right {
     margin: 1em auto;
 }
 
-@media screen and (max-width: 500px) {
-    .left, .right {
-        visibility: hidden;
-    }
-}
-
-/*
-#quote-title {
-    text-align: right;
-    margin: 1em;
-}
-*/
-/*
-.quote {
-    display: block;
-    padding: 0 10px;
-    text-align: justify;
-    float: left;
-}
-*/
-
-/*
-.title {
-    display: block;
-}
-*/
-
 #tweet-btn {
-    /*display: block;*/
-    /*text-align: right;*/
-    /*margin: 1.5em 0;*/
     color: #419bd7;
 }
 
@@ -158,14 +80,23 @@ a, div {
     color: #387fb2;
 }
 
-/*.fa-twitter {
-    color: #419bd7;
-
-}*/
-
-/*
-button {
-  background: none;
-  border: none;
+@media screen and (max-width: 1024px) {
+    #get-new-quote-btn {
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        font-size: 20px;
+    }
+    .content {
+        font-size: 1.5em;
+    }
+    .title {
+        margin-right: 1.5em;
+    }
 }
-*/
+
+@media screen and (max-width: 500px) {
+    .left, .right {
+        visibility: hidden;
+    }
+}
